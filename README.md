@@ -23,5 +23,5 @@ This is my React learning project to practice React fundamental concepts, which 
 - Click the input field, type anything you like, prefer a real tag for a blog post.
 - Press Enter to register the tag.
 - If you enter the same tag twice, the app will ignore it and the input field will be set back to empty.
-- If the input field is in focus and empty and there are tags, press Backspace to delete the most current tag you added.
-- You can click the 'X' icon on each tag token to delete it from the tags.
+- If there are tags and the input field is in focus and you haven't typed anything yet, press Backspace to delete the most current tag you added.
+- Click the 'X' icon on each tag token to delete it from the tags.
