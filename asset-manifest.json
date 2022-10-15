@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tag-input-field-component/static/css/main.a736a483.css",
-    "main.js": "/tag-input-field-component/static/js/main.cb110023.js",
+    "main.js": "/tag-input-field-component/static/js/main.3ae7a467.js",
     "static/js/787.682e6779.chunk.js": "/tag-input-field-component/static/js/787.682e6779.chunk.js",
     "index.html": "/tag-input-field-component/index.html",
     "main.a736a483.css.map": "/tag-input-field-component/static/css/main.a736a483.css.map",
-    "main.cb110023.js.map": "/tag-input-field-component/static/js/main.cb110023.js.map",
+    "main.3ae7a467.js.map": "/tag-input-field-component/static/js/main.3ae7a467.js.map",
     "787.682e6779.chunk.js.map": "/tag-input-field-component/static/js/787.682e6779.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a736a483.css",
-    "static/js/main.cb110023.js"
+    "static/js/main.3ae7a467.js"
   ]
 }
