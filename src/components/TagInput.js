@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TagTokens from "./TagTokens";
 
-export default function ({ expanded }) {
+export default function TagInput() {
   let [tags, setTags] = useState([]);
   const [value, setValue] = useState("");
 
@@ -39,32 +39,29 @@ export default function ({ expanded }) {
     <div
       className="tag-input"
       style={{
-        padding: "10px 20px",
-        position: "relative",
-        border: "1px solid #cccccc",
-        visibility: expanded ? "visible" : "collapse",
-        height: "100%",
-        overflowY: "auto",
+        padding: "0 5px",
+        marginTop: "10px",
+        border: "1px solid black",
+        overflowX: "auto",
       }}
     >
-      <label>
-        Add New Tag
-        <input
-          type="text"
-          name="tag"
-          value={value}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          style={{
-            width: "100%",
-            padding: "2px",
-            marginTop: "10px",
-            boxSizing: "border-box",
-          }}
-        />
-      </label>
-
       <TagTokens tags={tags} onClick={handleClick} />
+      <input
+        type="text"
+        name="tag"
+        id="tag"
+        value={value}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
+        style={{
+          padding: "5px 0",
+          marginLeft: "5px",
+          display: "inline",
+          boxSizing: "border-box",
+          border: "none",
+          outline: "none",
+        }}
+      />
     </div>
   );
 }

@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import TagButton from "./components/TagButton";
-// import TagTokens from "./components/TagTokens";
-import TagInput from "./components/TagInput";
 import { useState } from "react";
+import TagInputWrapper from "./components/TagInputWrapper";
 
 function App() {
   const [expanded, setExpanded] = useState(false);
@@ -22,7 +20,7 @@ function App() {
       }}
     >
       <TagButton expanded={expanded} onClick={handleClick} />
-      <TagInput expanded={expanded} />
+      <TagInputWrapper expanded={expanded} />
     </div>
   );
 }

@@ -1,16 +1,16 @@
-export default function ({ tags, onClick }) {
+export default function TagTokens({ tags, onClick }) {
   const tokenStyle = {
     backgroundColor: "#eeeeee",
     color: "#222222",
     borderRadius: "2px",
     padding: "4px 8px",
     display: "inline-block",
-    marginTop: "10px",
+    marginTop: "5px",
     whiteSpace: "no-wrap",
   };
 
   return (
-    <div className="tag-tokens" style={{ overFlow: "scroll" }}>
+    <div className="tag-tokens" style={{ display: "inline" }}>
       {tags.map((tag, i) => (
         <span
           key={tag.id}
