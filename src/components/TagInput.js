@@ -10,10 +10,10 @@ export default function TagInput() {
   };
 
   const handleKeyDown = (e) => {
-    if (value !== "" && e.key === "Enter") {
+    if (value.replace(/\s+/g, "") !== "" && e.key === "Enter") {
       // is typed value a duplicate?
       const isFound = tags.some(
-        (tag) => value.toLowerCase() === tag.tagValue.toLowerCase()
+        (tag) => value.trim().toLowerCase() === tag.tagValue.toLowerCase()
       );
       isFound
         ? setTags([...tags])
@@ -21,7 +21,7 @@ export default function TagInput() {
             ...tags,
             {
               id: `${value.replace(/\s+/g, "").toLowerCase()}${value.length}`,
-              tagValue: value,
+              tagValue: value.trim(),
             },
           ]);
       setValue("");
