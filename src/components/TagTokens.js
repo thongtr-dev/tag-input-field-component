@@ -19,7 +19,7 @@ export default function TagTokens({ tags, onClick }) {
           style={
             i !== tags.length - 1
               ? { ...tokenStyle, marginRight: "10px" }
-              : tokenStyle
+              : { ...tokenStyle, marginBottom: "5px" }
           }
         >
           {tag.tagValue}
