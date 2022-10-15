@@ -2,7 +2,7 @@ import { useState } from "react";
 import TagTokens from "./TagTokens";
 
 export default function TagInput() {
-  let [tags, setTags] = useState([]);
+  const [tags, setTags] = useState([]);
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {
